@@ -1,0 +1,154 @@
+/* Table of Contnents
+  -------------------------------------------------
+  -Color Palette
+  -Typography
+  -General Content
+  -Header & Navigation
+  -Images & Media
+  -Footer
+  -Media Queries
+  -------------------------------------------------*/
+
+/* Color Palette
+  ------------------------------------------------*/
+
+$pale-pink: #f1d7d8
+$middle-blue: #7ac3d1
+$rich-black: #000a1d
+$queen-blue: #436996
+$middle-purple: #d489b8
+$celadon-blue: #357799
+$indigo-dye: #014174
+$sonic-silver: #776c69
+$black: #000004
+
+/* Typography
+  ------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Satisfy&display=swap')
+
+h2 
+  font-family: 'Satisfy', sans-serif
+  font-size: 3em
+  margin: 0.67em 0.67em 0
+  text-align: center
+  color: $indigo-dye
+  &.alt-lead
+    color: $middle-purple
+    text-shadow: 2px 3px 2px $queen-blue
+    
+p.bio
+  color: lighten($pale-pink, 20%)
+  text-shadow: 0.5px 0.5px 0.5px $pale-pink
+  max-width: 100%
+
+h3
+  color: $pale-pink
+  font-size: 1.5em
+  text-transform: uppercase
+  letter-spacing: 0.15em
+  margin: 2% 0
+
+p.intro
+  font-size: 1.25em
+  max-width: 60%
+  margin: 0.80em auto
+  color: darken($indigo-dye, 15%)
+  
+/* General Content
+ ------------------------------------------------*/
+  
+body
+  background-color: $pale-pink
+  font-family: 'Abel', sans-serif
+  font-size: 1.5em
+  color: $rich-black
+
+.container 
+  width: 1000px
+  max-width: 100%
+  
+main
+  padding-top: 3%
+  text-align: center
+  
+.main
+  margin: 10% auto
+  display: flex
+  flex-flow: row wrap
+  justify-content: center
+  
+.row
+  padding: 2%
+  margin: 0 auto
+  
+.teal
+  background-color: $middle-blue
+  
+section
+  margin: 10% 0
+
+hr 
+  border: 0
+  height: 1px
+  background-image: linear-gradient(to right, rgba(53, 119, 153, 0), rgba(67, 105, 150, 0.75), rgba(53, 119, 153, 0))
+
+#bio .container .four.columns
+  margin: 5% 0
+
+/* Header & Navigation
+  ------------------------------------------------*/
+header.main-nav
+  padding: 1% 0
+.logo
+  margin: 5% auto
+  text-align: center
+.logo h1
+  display: inline-block
+  font-size: 3em
+  color: $pale-pink
+  text-decoration: none
+  border: 3px solid $pale-pink
+  text-transform: uppercase
+  padding: 2px 10px 0 10px
+  margin: 0
+  &:hover
+    background-color: $pale-pink
+    color: $middle-blue
+    box-shadow: 3px 4px 5px $middle-purple
+
+/* Images & Media
+  ------------------------------------------------*/
+img
+  max-width: 100%
+  &:hover
+    opacity: 0.8
+
+
+
+/* Footer
+  ------------------------------------------------*/  
+ul.social
+  display: flex
+  flex-flow: row wrap
+  justify-content: center
+  margin-top: 5%
+  margin-bottom: 10% 
+  list-style-type: none
+  text-align: center
+  li
+    display: inline
+    padding: 0 2%
+    flex: 0 1
+    a
+      color: $sonic-silver
+  .codepen a:hover,.github a:hover, .linkedin a:hover, .email a:hover
+    color: darken($middle-purple, 25%)
+    i
+      text-shadow: 2px 2px 2px $indigo-dye
+
+
+p.copyright
+    padding-top: 1%
+    text-align: center
+    color: $sonic-silver
+  
