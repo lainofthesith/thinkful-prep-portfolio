@@ -193,32 +193,23 @@ p.copyright
   h3
     margin: 2% 0   
 
-  #portfolio
+  #portfolio 
     display: flex
     flex-flow: row wrap
-    justify-content: space-between
+    justify-content: space-evenly
 
-  .portfolio 
-    flex: 1 1 300px
-    padding-bottom: .75%
-      
+  .portfolio
+    padding: 2%
+    flex-grow: 1
+  
+    
   ol
     max-width: 50%   
     
   p.copyright
     font-size: 1em   
-    
-/* Larger than tablet */
-@media (min-width: 700px) 
-  html
-    font-size: 16px
-  h2
-    font-size: 2em
-    margin: 1em auto
-    width: 100%
-  h3
-    letter-spacing: 0.15em
-    margin: 2% 0   
+
+@media(min-width: 600px)
   #bio
     padding: 1.5em 2em
     display: flex
@@ -233,13 +224,25 @@ p.copyright
     max-width: 65%
     text-align: justify
 
+/* Larger than tablet */
+@media (min-width: 750px) 
+  html
+    font-size: 16px
+  h2
+    font-size: 2em
+    margin: 1em auto
+    width: 100%
+  h3
+    letter-spacing: 0.15em
+    margin: 2% 0   
+
   ul.social
     padding: 0
     
   p.intro
     padding: 3% 
 /* Larger than desktop */
-@media (min-width: 1000px) 
+@media (min-width: 950px) 
   .logo h1
     display: inline-block
     font-size: 3em
@@ -254,6 +257,10 @@ p.copyright
     
   .bio-text
     max-width: 60%
+    
+  .portfolio
+    flex-basis: 33%
+    
 /* Larger than Desktop HD */
 @media (min-width: 1200px)
   .logo h1
