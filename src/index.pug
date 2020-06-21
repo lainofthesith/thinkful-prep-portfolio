@@ -1,45 +1,46 @@
+
+// Header Content
 header.main-nav.teal
   .container
-    .twelve.columns
-      .logo
-        h1 Damita Salmon
-        h3 Software Developer
+    .logo
+      h1 Damita Salmon
+      h3 Software Developer
+//Main Content
 main
-  section.row.twelve.columns#intro
+  section#intro
     .container
         h2.alt-lead Hey there!
         hr
-        p.intro I am a software developer based in Baltimore, MD. 
-      
+        p.intro I am a software developer, visual artist and spiritual practioner based in Baltimore, MD. 
+  // Portfolio Starts Here --------------------    
   section      
-    .container.main.teal
+    .main.teal
       h2 Portfolio
-      .row
-        .four.columns.portfolio
+      .container#portfolio
+        .portfolio
           img(src="https://loremflickr.com/320/240/backpacker?random=1")
-        .four.columns.portfolio
+        .portfolio
           img(src="https://loremflickr.com/320/240/desert,cycle?random=2")
-        .four.columns.portfolio
+        .portfolio
           img(src="https://loremflickr.com/320/240/bikes?random=3")
-      .row
-        .four.columns.portfolio
+        .portfolio
           img(src="https://loremflickr.com/320/240/safari?random=4")
-        .four.columns.portfolio
+        .portfolio
           img(src="https://loremflickr.com/320/240/mountain,overlook?random=5")
-        .four.columns.portfolio
+        .portfolio
           img(src="https://loremflickr.com/320/240/paris,couple?random=6")
-      .row
-        .four.columns.portfolio
+        .portfolio
           img(src="https://loremflickr.com/320/240/rider?random=7")
-        .four.columns.portfolio
+        .portfolio
           img(src="https://loremflickr.com/320/240/beach,sunset/all?random=8")
-        .four.columns.portfolio
+        .portfolio
           img(src="https://loremflickr.com/320/240/toes,sand/all?random=9")
-  section.row.teal#bio
-    .container
-      .four.columns
+    // Bio Content
+  section.teal
+    .container#bio
+      .bio-img
         img#avatar(src="https://lh3.googleusercontent.com/4oUg7UAf-FtzRUF1Br5t5m2wjtnrHFNzilHbKkX8PUQpsasAXtWG-HYfFeETgu4pJhOyMUcsKwxtUQrOLdQsw0ZIVEDMZ32SjYrenhVUZZTY_Zxvd50F_CcOqUDfqXkVWxCDlKKX=w2400")
-      .eight.columns
+      .bio-text
         h2.bio About Damita
         p.bio I'm interested in the intersectionality between technology, community building and social justice. I found that I really enjoyed using technology to help people solve everyday problems, like putting websites together for a small businesses or community organizers. 
         p Aside from web development, I enyoy:
@@ -48,25 +49,24 @@ main
             li anime
             li spiritual development
         p.bio If you're looking to hire a new developer (or are looking for a partner for a hackathon) please reach out! I'm happy to work with other developers to build great software and innovate new solutions. 
+  // Contact and Footer
 footer
   .container
     section#contact 
-      .row.twelve.columns
         h2.alt-lead Contact Me
         ul.social
           li.codepen
             a(href="https://codepen.io/lainofthewired/")
-              i.fab.fa-codepen.fa-3x
+              i.fab.fa-codepen.fa-2x
           li.github
             a(href="https://github.com/lainofthesith")
-              i.fab.fa-github.fa-3x  
+              i.fab.fa-github.fa-2x  
           li.linkedin
             a(href="https://www.linkedin.com/in/damitasalmon/")
-              i.fab.fa-linkedin.fa-3x
+              i.fab.fa-linkedin.fa-2x
           li.email
             a(href="mailto:lainofthesith@gmail.com")
-              i.fas.fa-envelope.fa-3x
+              i.fas.fa-envelope.fa-2x
   .teal
     .container
-      .row.twelve.columns
-        p.copyright &copy; Damita Salmon, Lain of the Sith. All Rights Reserved.  
+      p.copyright &copy; Damita Salmon, Lain of the Sith. All Rights Reserved.  

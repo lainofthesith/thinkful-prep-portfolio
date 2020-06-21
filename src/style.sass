@@ -28,48 +28,52 @@ $black: #000004
 
 h2 
   font-family: 'Satisfy', sans-serif
-  font-size: 3em
-  margin: 0.67em 0.67em 0
-  text-align: center
   color: $indigo-dye
+  text-shadow: 2px 3px 2px $middle-purple
+  margin: 0.75em auto
+  width: 100%
   &.alt-lead
     color: $middle-purple
     text-shadow: 2px 3px 2px $queen-blue
-    
+
 p.bio
   color: lighten($pale-pink, 20%)
   text-shadow: 0.5px 0.5px 0.5px $pale-pink
-  max-width: 100%
 
 h3
   color: $pale-pink
-  font-size: 1.5em
   text-transform: uppercase
   letter-spacing: 0.15em
-  margin: 2% 0
+
 
 p.intro
-  font-size: 1.25em
-  max-width: 60%
-  margin: 0.80em auto
   color: darken($indigo-dye, 15%)
+  
   
 /* General Content
  ------------------------------------------------*/
-  
+html
+  box-sizing: border-box
+  font-size: 16px
+*, *:before, *:after
+  box-sizing: inherit
+
+
 body
   background-color: $pale-pink
   font-family: 'Abel', sans-serif
-  font-size: 1.5em
+  font-size: 1.25em
   color: $rich-black
+  text-align: center
 
 .container 
   width: 1000px
   max-width: 100%
-  
+  margin: 0 auto
+  padding: 2%
+    
 main
   padding-top: 3%
-  text-align: center
   
 .main
   margin: 10% auto
@@ -77,37 +81,32 @@ main
   flex-flow: row wrap
   justify-content: center
   
-.row
-  padding: 2%
-  margin: 0 auto
-  
 .teal
   background-color: $middle-blue
   
-section
-  margin: 10% 0
-
 hr 
   border: 0
   height: 1px
   background-image: linear-gradient(to right, rgba(53, 119, 153, 0), rgba(67, 105, 150, 0.75), rgba(53, 119, 153, 0))
 
-#bio .container .four.columns
-  margin: 5% 0
+
+
 
 /* Header & Navigation
   ------------------------------------------------*/
-header.main-nav
+.main-nav
   padding: 1% 0
+  border-bottom: .5em solid $indigo-dye
+    
 .logo
   margin: 5% auto
   text-align: center
+  
 .logo h1
   display: inline-block
-  font-size: 3em
   color: $pale-pink
   text-decoration: none
-  border: 3px solid $pale-pink
+  border: .05em solid $pale-pink
   text-transform: uppercase
   padding: 2px 10px 0 10px
   margin: 0
@@ -122,8 +121,8 @@ img
   max-width: 100%
   &:hover
     opacity: 0.8
-
-
+.bio-img
+  margin: 0 auto
 
 /* Footer
   ------------------------------------------------*/  
@@ -149,6 +148,129 @@ ul.social
 
 p.copyright
     padding-top: 1%
-    text-align: center
-    color: $sonic-silver
+    color: $indigo-dye
   
+/* Media Queries
+  ------------------------------------------------*/
+
+/* Larger than mobile */
+@media (min-width: 400px)
+  html
+    font-size: 14px
+  .logo h1
+    font-size: 2.5em
+  h2
+    font-size: 1.9em
+  ol
+    max-width: 60%
+    margin: 0 auto
+  
+  h3
+    font-size: 1em
+
+    margin: .5em auto
+  .bio-img
+    max-width: 50%
+  section#bio
+    padding: 1.5em 2em
+  ul.social
+    padding: 0
+
+  p.copyright
+    font-size: .9em
+  
+  p.intro
+    max-width: 80%
+    text-align: center
+    margin: 0 auto
+  
+/* Larger than phablet */
+@media (min-width: 550px)  
+  h2
+    font-size: 2em
+    margin: 1em auto
+    width: 100%
+  h3
+    margin: 2% 0   
+
+  #portfolio
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+
+  .portfolio 
+    flex: 1 1 300px
+    padding-bottom: .75%
+      
+  ol
+    max-width: 50%   
+    
+  p.copyright
+    font-size: 1em   
+    
+/* Larger than tablet */
+@media (min-width: 700px) 
+  html
+    font-size: 16px
+  h2
+    font-size: 2em
+    margin: 1em auto
+    width: 100%
+  h3
+    letter-spacing: 0.15em
+    margin: 2% 0   
+  #bio
+    padding: 1.5em 2em
+    display: flex
+    flex-flow: row wrap
+    align-items: center
+    justify-content: space-evenly
+  .bio-img
+    max-width: 35%
+    padding: 0 1%
+    
+  .bio-text
+    max-width: 65%
+    text-align: justify
+
+  ul.social
+    padding: 0
+    
+  p.intro
+    padding: 3% 
+/* Larger than desktop */
+@media (min-width: 1000px) 
+  .logo h1
+    display: inline-block
+    font-size: 3em
+  #bio
+    padding: 1.5em 2em
+    display: flex
+    flex-flow: row wrap
+    align-items: center
+    justify-content: space-evenly
+  .bio-img
+    max-width: 40%
+    
+  .bio-text
+    max-width: 60%
+/* Larger than Desktop HD */
+@media (min-width: 1200px)
+  .logo h1
+    font-size: 4.75em
+  h2 
+    font-size: 3em
+    margin: 0.67em 0
+
+  h3
+    font-size: 1.5em
+    letter-spacing: 0.15em
+    margin: 2% 0
+
+  p.intro
+    font-size: 1.25em
+    max-width: 60%
+    margin: 0.80em auto
+    
+  p.copyright
+    font-size: 1.20em
